@@ -1,16 +1,23 @@
-<!doctype html>
-{% load static %}
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="{% static "foundation/css/foundation.css" %}" />
-    <link rel="stylesheet" href="{% static "foundation/css/app.css" %}" />
-  </head>
-  <body>
+{% extends "base.html" %}
+{% block body %}
+    <div class="row">
+      <div class="large-12 columns">
+        <h1> The Cognitive Rhythms Collaborative </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="callout large">
+        <p>
+        The Cognitive Rhythms Collaborative (CRC) is a group of scientists in the Boston area who work together to advance our understanding of the brain dynamics underlying cognitive functions such as sensory processing, attention, learning, memory and motor planning.</br>
+        </br>
+        The members of the CRC come from multiple institutions around the Boston area and beyond (see <a href="">Faculty</a>). We encourage those who are interested in working with us or participating in our events to contact Nancy Kopell (nk at bu.edu).
+        </p?>
+      </div>
+    </div>
+{% endblock %}
 
+
+{% comment %}
     <div class="row">
       <div class="large-12 columns">
         <h1>Welcome to Foundation for Sites 6</h1>
@@ -161,9 +168,5 @@
       </div>
     </div>
 
-    <script src="{% static "foundation/js/vendor/jquery.min.js" %}"></script>
-    <script src="{% static "foundation/js/vendor/what-input.min.js" %}"></script>
-    <script src="{% static "foundation/js/foundation.min.js" %}"></script>
-    <script src="{% static "foundation/js/app.js" %}"></script>
-  </body>
+{% endcomment %}
 </html>
