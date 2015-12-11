@@ -5,14 +5,14 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
+    # :
     # url(r'^$', 'crc.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', 'crc.views.home', name='home')
 )
 
 urlpatterns += patterns('',
-    (r'notifications/', get_nyt_pattern()),
-    (r'', get_wiki_pattern()),
+    (r'wiki/notifications/', get_nyt_pattern()),
+    (r'wiki/', get_wiki_pattern()),
 )
