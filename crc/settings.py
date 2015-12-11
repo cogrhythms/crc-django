@@ -109,3 +109,9 @@ TEMPLATE_CONTEXT_PROCESSORS = [
 TEMPLATE_DIRS = (
     BASE_DIR + '/templates/',
     )
+
+STATIC_PATH = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIRS = (
+    STATIC_PATH,
+)

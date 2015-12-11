@@ -4,4 +4,4 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 
 def home(request):
-    return render_to_response('home.html')
+    return render_to_response('index.html')
