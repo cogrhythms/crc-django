@@ -11,7 +11,7 @@ class People(models.Model):
     groups = models.ManyToManyField('Groups')
 
 class Topics(models.Model):
-    name = models.CharField(max_length=50, blank=False)
+    name = models.CharField(max_length=100, blank=False)
     description = models.TextField()
 
 class Papers(models.Model):
