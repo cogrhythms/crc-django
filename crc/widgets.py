@@ -9,4 +9,5 @@ TITLE_CHOICES = (
     ('D', 'Director'),
     ('EC', 'Executive Committee'),
     ('AF', 'Affiliated Faculty'),
+    ('', ''),
     )
