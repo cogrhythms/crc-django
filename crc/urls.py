@@ -8,8 +8,14 @@ urlpatterns = patterns('',
     # :
     # url(r'^$', 'crc.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'crc.views.home', name='home')
+    url(r'^admin/$', include(admin.site.urls)),
+    url(r'^$', 'crc.views.home', name='home'),
+    url(r'^faculty/$', 'crc.views.faculty', name='faculty'),
+    url(r'^postdocs/$', 'crc.views.postdocs', name='postdocs'),
+    url(r'^topics/$', 'crc.views.topics', name='topics'),
+    url(r'^groups/$', 'crc.views.groups', name='groups'),
+    url(r'^courses/$', 'crc.views.courses', name='courses'),
+
 )
 
 urlpatterns += patterns('',
