@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 
 def home(request):
-    return render('index.html')
+    return render(request, 'index.html',{})
 
 def faculty(request):
     people_list = People.objects.get(position='F')

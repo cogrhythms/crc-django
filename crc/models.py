@@ -34,7 +34,7 @@ class Courses(models.Model):
     def __unicode__(self):
         return self.name
 
-class Groups(model.Model):
+class Groups(models.Model):
     name = models.CharField(max_length=100, blank=False)
     description = models.TextField()
 
